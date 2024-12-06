@@ -26,7 +26,7 @@ public class RechteckController {
     private void onButtonCalculateClick(){
 
         if (textFieldBreite.getText().equals("") || textFieldHoehe.getText().equals("")){
-        showMessageBox("Bitte geben Sie sowohl die Breite als auch die Höhe des Rechtecks ein.");
+            showMessageBox("Bitte geben Sie sowohl die Breite als auch die Höhe des Rechtecks ein.");
         }
     }
 
@@ -35,8 +35,8 @@ public class RechteckController {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Info");
         alert.setHeaderText(null);
-        alert.setContentText("Bitte geben Sie sowohl die Breite als auch die Höhe des Rechtecks ein.");
+        alert.setContentText(message);
         alert.setContentText(message);
     }
 
-    }
+}
